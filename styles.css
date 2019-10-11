@@ -22,13 +22,14 @@ h1 {
 main {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 form {
   background-color: #E6ECF4;
   border-radius: 10px;
   padding: 20px;
-  height: 350px;
+  height: 450px;
   width: 400px;
   display: flex;
   flex-direction: column;
@@ -42,8 +43,12 @@ img {
   margin-top: 30px;
 }
 
+#eight {
+  visibility: visible;
+}
+
 #woody {
-  height: 350px;
+  height: 450px;
   width: auto;
   margin-left: 20px;
   margin-bottom: 0px;
@@ -74,4 +79,8 @@ input {
   width: 100px;
   color: white;
   align-self: flex-end;
+}
+
+h3 {
+  font-style: italic;
 }

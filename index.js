@@ -22,11 +22,18 @@ var answer = Array(
   "Very doubtful."
 )
 
+var question = document.querySelector('h3');
+var typedQ = document.getElementById('ask');
+var ball = document.getElementById('eight');
+
 function randomAnswer () {
   event.preventDefault();
   var randomAnswer =
   answer[Math.floor(Math.random() * answer.length)];
   document.getElementById("randomAnswer").innerText = randomAnswer;
+
+  question.innerText = typedQ.value;
+  ball.style.visibility = "hidden";
 }
 
 // get.addEventListener('click', randomAnswer);
