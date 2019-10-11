@@ -10,3 +10,63 @@ light blue background: #E6ECF4;
 clear button: #DE4841;
 clear button disabled: #D0CDCD
 */
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  color: #2B4E80;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+}
+
+form {
+  background-color: #E6ECF4;
+  border-radius: 10px;
+  padding: 20px;
+  height: 350px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  height: 80px;
+  width: 80px;
+  margin-bottom: 80px;
+  margin-top: 30px;
+}
+
+#woody {
+  height: 85%;
+  width: 85%;
+  margin-left: 20px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+button {
+  width: 380px;
+  height: 40px;
+  margin: 10px;
+  border: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+}
+
+#answer {
+  background-color: #607AA0;
+  color: white;
+}
+
+#clear {
+  /* the color you gave us is red? */
+  background-color: lightgray;
+  width: 100px;
+  align-self: flex-end;
+}
