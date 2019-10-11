@@ -10,8 +10,9 @@
     <h1>Will Andy Pick Me?</h1>
     <main>
     <form>
-      <button id="ask">Ask your questions here!</button>
-      <button id="answer">Get your answer!</button>
+      <input type="text" id="ask" placeholder="Ask your questions here!"/>
+      <button id="answer" onclick="randomAnswer()">Get your answer!</button>
+      <h2 id="randomAnswer"></h2>
       <img src="assets/eight-ball.png" alt="Woody"/>
       <button id="clear">Clear</button>
     </form>
@@ -19,5 +20,6 @@
       <img src="assets/woody.png" alt="Woody" id="woody"/>
     </section>
   </main>
+  <script src="index.js" charset="utf-8"></script>
   </body>
 </html>

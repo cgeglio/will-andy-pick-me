@@ -43,13 +43,14 @@ img {
 }
 
 #woody {
-  height: 85%;
-  width: 85%;
+  height: 350px;
+  width: auto;
   margin-left: 20px;
   margin-bottom: 0px;
   margin-top: 0px;
 }
 
+input,
 button {
   width: 380px;
   height: 40px;
@@ -59,14 +60,18 @@ button {
   font-size: 15px;
 }
 
+input {
+  text-align: center;
+}
+
 #answer {
   background-color: #607AA0;
   color: white;
 }
 
 #clear {
-  /* the color you gave us is red? */
-  background-color: lightgray;
+  background-color: #D0CDCD;
   width: 100px;
+  color: white;
   align-self: flex-end;
 }
