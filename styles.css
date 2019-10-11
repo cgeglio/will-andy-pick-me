@@ -81,6 +81,16 @@ input {
   align-self: flex-end;
 }
 
+#clear:hover {
+  background-color: #DE4841;
+}
+
 h3 {
   font-style: italic;
+}
+
+p {
+  font-size: 6pt;
+  /* margin: none; */
+  padding: 0px;
 }

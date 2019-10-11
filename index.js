@@ -26,9 +26,13 @@ var question = document.querySelector('h3');
 var typedQ = document.getElementById('ask');
 var ball = document.getElementById('eight');
 var inputter = document.querySelector('input');
+var tryAgain = document.getElementById('error')
 
 function randomAnswer () {
   event.preventDefault();
+  if (inputter.value.length<1) {
+    tryAgain.innerText = "Please enter a question!"
+  } else {
   var randomAnswer =
   answer[Math.floor(Math.random() * answer.length)];
   document.getElementById("randomAnswer").innerText = randomAnswer;
@@ -38,6 +42,30 @@ function randomAnswer () {
    if (ball.style.visibility = "hidden") {
      inputter.value = "";
    }
+ }
 }
 
-// get.addEventListener('click', randomAnswer);
+
+var reset = document.getElementById('clear');
+
+function doOver () {
+  if (question.innerText = typedQ.value) {
+    ball.style.visibility = "visible";
+    inputter.innerText = "hi";
+  }
+  // } else {
+  //   reset.disabled = true;
+  // }
+}
+
+reset.addEventListener('click', doOver);
+
+// function validate {
+//
+//   if (inputter.value.length<1) {
+//     tryAgain.innerText = "Please enter a question!"
+//   }
+//   else {
+//
+//   }
+// }
