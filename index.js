@@ -25,6 +25,7 @@ var answer = Array(
 var question = document.querySelector('h3');
 var typedQ = document.getElementById('ask');
 var ball = document.getElementById('eight');
+var inputter = document.querySelector('input');
 
 function randomAnswer () {
   event.preventDefault();
@@ -34,6 +35,9 @@ function randomAnswer () {
 
   question.innerText = typedQ.value;
   ball.style.visibility = "hidden";
+   if (ball.style.visibility = "hidden") {
+     inputter.value = "";
+   }
 }
 
 // get.addEventListener('click', randomAnswer);
